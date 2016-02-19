@@ -1,0 +1,10 @@
+<template name="job">
+  <a href="{{pathFor 'jobs'}}">← Back</a>
+  {{#with job}}
+    <div class="job">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <h5><a href="#" class="delete">Delete</a></h5>
+    </div>
+  {{/with}}
+</template>

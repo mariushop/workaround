@@ -1,0 +1,8 @@
+<template name="jobs">
+  <h3>Jobs: </h3>
+  <ul>
+    {{#each jobs}}
+      <li><a href="{{pathFor "job"}}">{{title}}</a></li>
+    {{/each}}
+  </ul>
+</template>
