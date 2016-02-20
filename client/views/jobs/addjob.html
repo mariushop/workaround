@@ -1,4 +1,4 @@
-<template name="addjob">
+<template name="addJob">
   <h1>Add job</h1>
   <hr>
   <form id="addJobForm">
@@ -12,10 +12,10 @@
     </div>
     <div class="form-group">
       <label for="location">Location</label>
-      <input type="text" class="form-control" id="location" placeholder="Password">
+      <input type="text" class="form-control" id="location" placeholder="Location">
     </div>
-    <div id="my_map">
-      Map here
+    <div id="my_map" class="map-container">
+      {{> googleMap name="jobAddMap" options=exampleMapOptions}}
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>

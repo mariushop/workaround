@@ -85,7 +85,7 @@ Router.map(function() {
 
   //Jobs
   
-  this.route('addjob',{
+  this.route('addJob',{
     path:"/jobs/add"
   });
 
